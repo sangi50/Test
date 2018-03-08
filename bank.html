@@ -27,6 +27,10 @@
 	<body>
 	         <font>
 		<fieldset>	
+			
+			<label><button  onclick="totsupply()" >Totalsupply</button></label>
+		</fieldset>
+		<fieldset>	
 			<label>Balance<input id="balance" type="text"/></label>
 			<label><button  onclick="bal()" >balance</button></label>
 		</fieldset>
@@ -60,7 +64,7 @@
 		"type": "function"
 	},
 	{
-		"constant": false,
+		"constant": true,
 		"inputs": [],
 		"name": "totalSupply",
 		"outputs": [
@@ -70,7 +74,7 @@
 			}
 		],
 		"payable": false,
-		"stateMutability": "nonpayable",
+		"stateMutability": "view",
 		"type": "function"
 	},
 	{
@@ -187,7 +191,7 @@
 	}
 ]);
 		              
-		var bb= aa.at('0x27a7d765fc53f29ab3ee9c7f911cdee6b90f0c49');
+		var bb= aa.at('0xfa5e2dd691af6397d3713814172c656574229e7f');
 		var ba=document.getElementById('balance');
 		var transferaccountno= document.getElementById('taccno');
 		var transferamount= document.getElementById('tamt');
