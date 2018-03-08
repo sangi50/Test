@@ -25,7 +25,7 @@ contract bank {
         totalsupply=10000;
         balances[msg.sender]=totalsupply;
     }
-     function totalSupply() returns (uint256)
+     function totalSupply() constant returns (uint256)
     {
         return totalsupply;
     }
